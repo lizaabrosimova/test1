@@ -1,0 +1,6 @@
+a=list(map(int, input().split()))
+b=1
+for i in range(1, len(a)):
+        if a[i] not in a[:i]:
+            b+=1
+print(b)

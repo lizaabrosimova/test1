@@ -1,0 +1,7 @@
+n = int(input())
+res = {}
+while n:
+    tmp = n % 10
+    res[tmp] = res.get(tmp, 0) + 1
+    n //= 10
+print(res[min(res)])
